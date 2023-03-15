@@ -1,0 +1,452 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/jquery-3.6.3.min.js"></script>
+    <script src="./assets/js/three.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/js/slick/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/js/slick/slick/slick-theme.css" />
+</head>
+
+<body>
+
+    <div class="side-block" id="profile-block">
+        <div class="close-cross">
+            <img src="./assets/images/x-lg.svg" alt="close">
+        </div>
+        <div class="side-menu" id="profile-side-menu">
+            <span class="menu-title">Profile</span>
+            <ul>
+                <li><a href="#"><img src="./assets/images/person-square.svg">My profile</a></li>
+                <li><a href="#"><img src="./assets/images/stickies.svg">My posts</a></li>
+                <li><a href="#"><img src="./assets/images/grid-1x2.svg">My items</a></li>
+                <hr>
+                <li><a href="#"><img src="./assets/images/gear.svg">Settings</a></li>
+            </ul>
+        </div>
+        <div class="shadow-full" id="profile-shadow">
+
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <span id="logo">
+                Car<span>Sales</span>
+            </span>
+            <ul id="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">Motorcycle</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div id="profile-icon">
+                <a href="#">
+                    <img src="./assets/images/user.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="show-case" id="show-case-bg">
+            <div class="container">
+                <div class="title">
+                    Popular options
+                </div>
+                <div class="big-img">
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <div class="big-img-description">
+                            <span class="car-name">
+                                2018 SEAT Ateca
+                            </span>
+                            <div>
+                                <div class="car-price">2300£</div>
+                                <span class="car-location"><img src="./assets/images/geo-alt.svg">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <div class="big-img-description">
+                            <span class="car-name">
+                                2018 SEAT Ateca
+                            </span>
+                            <div>
+                                <div class="car-price">2300£</div>
+                                <span class="car-location"><img src="./assets/images/geo-alt.svg">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <div class="big-img-description">
+                            <span class="car-name">
+                                2018 SEAT Ateca
+                            </span>
+                            <div>
+                                <div class="car-price">2300£</div>
+                                <span class="car-location"><img src="./assets/images/geo-alt.svg">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <div class="big-img-description">
+                            <span class="car-name">
+                                2018 SEAT Ateca
+                            </span>
+                            <div>
+                                <div class="car-price">2300£</div>
+                                <span class="car-location"><img src="./assets/images/geo-alt.svg">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <div class="big-img-description">
+                            <span class="car-name">
+                                2018 SEAT Ateca
+                            </span>
+                            <div>
+                                <div class="car-price">2300£</div>
+                                <span class="car-location"><img src="./assets/images/geo-alt.svg">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="post-button">
+                <div>View More</div>
+            </a>
+        </div>
+        <div class="main-block">
+            <section id="near-you" class="container">
+                <span class="title-block">Cars near you</span>
+                <div class="items-container">
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="post-button">
+                    <div>View More</div>
+                </a>
+            </section>
+            <section id="motorcycle-near-you" class="container">
+                <span class="title-block">Motorcycles near you</span>
+                <div class="items-container">
+                    <div>
+                        <img src="./assets/images/motorcycle.jpg" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/motorcycle.jpg" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/motorcycle.jpg" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items-container">
+                    <div>
+                        <img src="./assets/images/motorcycle.jpg" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/motorcycle.jpg" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/motorcycle.jpg" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="post-button">
+                    <div>View More</div>
+                </a>
+            </section>
+            <section id="best-price" class="container">
+                <span class="title-block">Best Price</span>
+                <div class="items-container">
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="post-button">
+                    <div>View More</div>
+                </a>
+            </section>
+            <section id="best-country" class="container">
+                <span class="title-block">Best cars in Ireland</span>
+                <div class="items-container">
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/images/weird-car.webp" alt="">
+                        <span class="item-price">2400£</span>
+                        <div class="item-info">
+                            <div>
+                                <span class="item-name">2018 SEAT Ateca</span>
+                                <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina Co.
+                                    Mayo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="post-button">
+                    <div>View More</div>
+                </a>
+            </section>
+            <section id="market">
+                <div class="container">
+                    <span class="title-block">Marketplace</span>
+                    <div class="items-container">
+                        <div>
+                            <img src="./images/car_part.jpg" alt="">
+                            <span class="item-price">2400£</span>
+                            <div class="item-info">
+                                <div>
+                                    <span class="item-name">2018 SEAT Ateca</span>
+                                    <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina
+                                        Co.
+                                        Mayo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/car_part.jpg" alt="">
+                            <span class="item-price">2400£</span>
+                            <div class="item-info">
+                                <div>
+                                    <span class="item-name">2018 SEAT Ateca</span>
+                                    <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina
+                                        Co.
+                                        Mayo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/car_part.jpg" alt="">
+                            <span class="item-price">2400£</span>
+                            <div class="item-info">
+                                <div>
+                                    <span class="item-name">2018 SEAT Ateca</span>
+                                    <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina
+                                        Co.
+                                        Mayo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/car_part.jpg" alt="">
+                            <span class="item-price">2400£</span>
+                            <div class="item-info">
+                                <div>
+                                    <span class="item-name">2018 SEAT Ateca</span>
+                                    <span class="item-location"><img src="./assets/images/geo-alt.svg" alt="geo">Ballina
+                                        Co.
+                                        Mayo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="post-button">
+                        <div>View More</div>
+                    </a>
+                </div>
+            </section>
+            <section id="blogs">
+                <span class="title-block">Popular blogs</span>
+            </section>
+        </div>
+    </main>
+    <script type="text/javascript" src="./assets/js/slick/slick/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/vanta.waves.min.js"></script>
+    <script>
+        VANTA.WAVES({
+            el: "#show-case-bg",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            shininess: 25.00,
+            waveHeight: 23.50,
+            waveSpeed: 0.40,
+            zoom: 8
+        })
+    </script>
+</body>
+
+</html>
