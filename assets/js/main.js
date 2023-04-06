@@ -1,5 +1,3 @@
-import sharedModule from "../../templates/item";
-
 $(function () {
     let profile_side_width = $("#profile-side-menu").outerWidth();
 
@@ -27,9 +25,8 @@ $(function () {
         autoplaySpeed: 3000,
     });
 
-    //Printing blocks
-    for (let i = 0; i < 6; i++) {
-        let carBlock = sharedModule.template;
-        $('.big-img').append(carBlock);
-    }
+    $(".items-container").load("../../templates/item.html", function() {
+        var copiedDiv = $("div").copy();
+        $(copiedDiv).appendTo("items-container");
+      });
 })
