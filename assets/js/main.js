@@ -25,8 +25,10 @@ $(function () {
         autoplaySpeed: 3000,
     });
 
-    $(".items-container").load("../../templates/item.html", function() {
-        var copiedDiv = $("div").copy();
-        $(copiedDiv).appendTo("items-container");
-      });
+    // $(".items-container").load("../../templates/item.html", function() {
+    //     var copiedDiv = $("div").copy();
+    //     for (let i = 0; i < 3; i++) {
+    //         $(copiedDiv).appendTo("items-container");
+    //     }
+    //   });
 })
