@@ -70,7 +70,7 @@ header .container{
 .side-menu{
     height: 100%;
     position: fixed;
-    margin-left: -160px;
+    margin-left: -300px;
     width: max-content;
     padding: 20px;
     z-index: 100;
@@ -170,9 +170,9 @@ header .container{
     position: relative;
 }
 
-.big-img .slick-slide img{
+/* .big-img .slick-slide img{
     transform: translateY(-35%);
-}
+} */
 
 .slick-slide:last-child{
     visibility: hidden;
@@ -306,7 +306,7 @@ header .container{
 
 .big-img-description{
     position: absolute;
-    bottom: 0;
+    bottom: 40px;
     margin-bottom: 20px;
     padding-bottom: 20px;
     left: 0;
@@ -467,13 +467,13 @@ header .container{
     justify-content: space-between;
 }
 
-.last-viewed > div{
+.last-viewed > a{
     width: 33%;
     position: relative;
     margin-bottom: 0.5%;
 }
 
-.last-viewed > div::before{
+.last-viewed > a::before{
     content: '';
     position: absolute;
     left: 0;
@@ -485,7 +485,7 @@ header .container{
     z-index: 1;
 }
 
-.last-viewed > div > img{
+.last-viewed > a > img{
     width: 100%;
 }
 
@@ -508,6 +508,7 @@ footer .container{
     display: flex;
     align-items: stretch;
     outline: 2px #1f86c2 solid;
+    background-color: #00a6fb;
 }
 
 .search-bar > input{
@@ -517,6 +518,10 @@ footer .container{
     background-color: #00a6fb;
     color: white;
     border-radius: 11px;
+}
+
+.side-menu .search-bar{
+    margin-top: 20px;
 }
 
 .search-bar > input:focus-visible{
@@ -533,9 +538,56 @@ footer .container{
     cursor: pointer;
 }
 
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after, .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    background-color: white !important;
+}
+
+.adaptive-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adaptive-links > div:nth-child(1){
+    margin-right: 15px;
+}
+
+#menu-block, #adaptive-menu{
+    display: none;
+}
+
+
+.side-menu .search-bar{
+    display: none;
+}
+
+.slick-slide{
+    height: 500px !important;
+}
+
 @media screen and (max-width: 1240px){
+    #menu-block{
+        display: block;
+    }
+
+    .shadow-full{
+        display: none !important;
+    }
+
+    #blogs .container > a{
+        width: 100%;
+    }
+
     .container{
         padding: 0 20px;
+    }
+
+    #adaptive-menu{
+        display: block;
+    }
+    
+    .side-menu > ul{
+        font-size: 25px;
     }
 
     .items-container{
@@ -591,7 +643,6 @@ footer .container{
 
     .big-img .slick-slide > img{
         transform: none;
-        width: 100%;
     }
 
     .big-img-description .car-name{
@@ -606,5 +657,41 @@ footer .container{
 
     .big-img-description{
         bottom: 20px;
+    }
+
+    .slick-slide{
+        height: 300px !important;
+    }
+
+    .show-case > .container{
+        height: unset;
+        max-width: 700px;
+    }
+
+    .show-case{
+        height: 400px;
+    }
+
+    .big-img-description .car-name, .big-img-description .car-location{
+        font-size: 16px;
+    }
+    
+    .big-img-description .car-price {
+        font-size: 14px;
+    }
+
+    .big-img-description{
+        padding: 15px !important;
+    }
+}
+
+@media (max-width: 700px) {
+    header .search-bar{
+        display: none;
+    }
+
+    .side-menu .search-bar{
+        display: flex;
+        width: max-content;
     }
 }
