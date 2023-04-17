@@ -69,8 +69,9 @@ header .container{
 
 .side-menu{
     height: 100%;
+    width: 100%;
     position: fixed;
-    margin-left: -300px;
+    margin-left: -400px;
     width: max-content;
     padding: 20px;
     z-index: 100;
@@ -643,6 +644,8 @@ footer .container{
 
     .big-img .slick-slide > img{
         transform: none;
+        height: 100%;
+        width: auto;
     }
 
     .big-img-description .car-name{
@@ -693,5 +696,26 @@ footer .container{
     .side-menu .search-bar{
         display: flex;
         width: max-content;
+    }
+
+    .big-img-description .car-name, .big-img-description .car-location{
+        font-size: 12px;
+    }
+    
+    .big-img-description .car-price {
+        font-size: 10px;
+        width: 70px;
+        height: 25px;
+    }
+
+    .big-img-description .car-location img{
+        width: 12px;
+        margin-right: 3px;
+    }
+
+    .post-button{
+        font-size: 14px;
+        padding: 7px;
+        margin: 10px auto 0 auto;
     }
 }

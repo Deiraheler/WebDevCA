@@ -51,7 +51,7 @@ $(function () {
     }
 
     function setImgHeight() {
-        if (img.height() < parentBlock.height()) {
+        if (img.height() <= parentBlock.height()) {
         img.css({
             'height': '100%',
             'width': 'auto',
