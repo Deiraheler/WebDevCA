@@ -35,23 +35,9 @@ $(function () {
         adaptiveHeight: true
     });
 
-    $('.slider').slick({
-        dots: false,
-        arrows: true,
-        prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-        nextArrow: '<button type="button" class="slick-next">Next</button>',
-        asNavFor: '.thumbnails'
-    });
-    $('.thumbnails').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider',
-        focusOnSelect: true
-    });
-
     // Slider adaptive slide image
-    var parentBlock = $('.slick-slide');
-    var img = $('.slick-slide > img');
+    var parentBlock = $('.index .slick-slide');
+    var img = $('.index .slick-slide > img');
 
     
     setImgHeight();
@@ -67,13 +53,6 @@ $(function () {
     }
 
     function setImgHeight() {
-        console.log("---------------");
-        console.log("IMG HEIGH: " + img.height());
-        console.log("IMG WIDTH: " + img.width());
-        console.log("BLOCK HEIGH: " + parentBlock.height());
-        console.log("BLOCK WIDTH: " + parentBlock.width());
-        console.log("---------------");
-
         if (img.height() < parentBlock.height()) {
         img.css({
             'height': '100%',
