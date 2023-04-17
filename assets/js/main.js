@@ -32,6 +32,7 @@ $(function () {
         dots: true,
         autoplaySpeed: 3000,
         variableWidth: true,
+        adaptiveHeight: true
     });
 
     $('.slider').slick({
@@ -52,6 +53,7 @@ $(function () {
     var parentBlock = $('.slick-slide');
     var img = $('.slick-slide > img');
 
+    
     setImgHeight();
     setSlidesWidth();
 
@@ -77,7 +79,7 @@ $(function () {
             'height': '100%',
             'width': 'auto',
         });
-        }else if(img.height() >= parentBlock.height()){
+        }else if(img.height() > parentBlock.height()){
         img.css({
             'height': 'auto',
             'width': '100%',

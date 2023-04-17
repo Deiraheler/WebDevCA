@@ -566,6 +566,11 @@ footer .container{
     height: 500px !important;
 }
 
+.slick-slide > img{
+    width: 100% !important;
+    height: auto !important;
+}
+
 @media screen and (max-width: 1240px){
     #menu-block{
         display: block;
@@ -664,10 +669,6 @@ footer .container{
         height: 300px !important;
     }
 
-    .slick-slide > img{
-        height: 300px;
-    }
-
     .show-case > .container{
         height: unset;
         max-width: 700px;
@@ -719,5 +720,10 @@ footer .container{
         font-size: 14px;
         padding: 7px;
         margin: 10px auto 0 auto;
+    }
+
+    .slick-slide > img{
+        height: 100% !important;
+        width: auto !important;
     }
 }
