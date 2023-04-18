@@ -32,12 +32,14 @@ $(function () {
         dots: true,
         autoplaySpeed: 3000,
         variableWidth: true,
+        adaptiveHeight: true
     });
 
     // Slider adaptive slide image
-    var parentBlock = $('.slick-slide');
-    var img = $('.slick-slide > img');
+    var parentBlock = $('.index .slick-slide');
+    var img = $('.index .slick-slide > img');
 
+    
     setImgHeight();
     setSlidesWidth();
 
@@ -51,12 +53,12 @@ $(function () {
     }
 
     function setImgHeight() {
-        if (img.height() <= parentBlock.height()) {
+        if (img.height() < parentBlock.height()) {
         img.css({
             'height': '100%',
             'width': 'auto',
         });
-        } else {
+        }else if(img.height() > parentBlock.height()){
         img.css({
             'height': 'auto',
             'width': '100%',
@@ -64,4 +66,12 @@ $(function () {
         }
     }
     // END Slider adaptive slide image
+
+      Fancybox.bind("[data-fancybox='gallery']", {
+        thumbs: {
+            autoStart: true, // Show thumbnails by default
+            axis: 'x', // Arrange thumbnails horizontally
+            hideOnClose: true // Hide thumbnails when the gallery is closed
+          }
+      });
 })
