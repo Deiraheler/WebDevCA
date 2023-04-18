@@ -66,4 +66,12 @@ $(function () {
         }
     }
     // END Slider adaptive slide image
+
+      Fancybox.bind("[data-fancybox='gallery']", {
+        thumbs: {
+            autoStart: true, // Show thumbnails by default
+            axis: 'x', // Arrange thumbnails horizontally
+            hideOnClose: true // Hide thumbnails when the gallery is closed
+          }
+      });
 })

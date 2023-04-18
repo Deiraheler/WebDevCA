@@ -457,6 +457,7 @@ header .container{
     width: 80%;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     justify-content: space-between;
 }
 
@@ -575,9 +576,6 @@ footer .container{
 
 #single-post > div:nth-child(2){
     width: 40%;
-}
-
-#single-post > div:last-child{
     padding: 0 20px;
 }
 
@@ -615,6 +613,72 @@ footer .container{
     box-sizing: border-box;
     padding: 20px;
 }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery a {
+    margin: 10px;
+  }
+  
+  .gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .message-field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .message-field textarea{
+    resize: none;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    margin: 10px 0; 
+    border: none;
+  }
+
+  .message-field textarea:focus-visible{
+    outline: none;
+  }
+
+  .message-field textarea::placeholder{
+    color: black;
+  }
+
+  .form-button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #00A6FB;
+    color: white;
+    cursor: pointer;
+    width: max-content;
+  }
+
+  #nav-menu .active{
+    color: #004c78;
+  }
+
+  .message-field{
+    background-color:#59bff4;
+    box-sizing: content-box;
+    padding: 10px;
+  }
+
+  .last-viewed::before{
+    content: "Recomendations for you";
+    position: absolute;
+    left: 0;
+    top: -60px;
+    font-size: 40px;
+  }
 
 
 @media screen and (max-width: 1240px){
@@ -771,5 +835,20 @@ footer .container{
     .index .slick-slide > img{
         height: 100% !important;
         width: auto !important;
+    }
+
+    #single-post{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #single-post > div:nth-child(1){
+        width: 100%;
+    }
+    
+    #single-post > div:nth-child(2){
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
     }
 }
