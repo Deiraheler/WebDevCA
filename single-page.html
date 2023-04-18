@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/jquery-3.6.3.min.js"></script>
     <script src="./assets/js/three.min.js"></script>
@@ -115,9 +116,9 @@
         <div class="side-menu">
             <span class="menu-title">Menu</span>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Cars</a></li>
-                <li><a href="#">Motorcycle</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./catalogue.html">Cars</a></li>
+                <li><a href="./catalogue.html">Motorcycle</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
@@ -208,8 +209,15 @@
             </span>
             <ul id="nav-menu">
                 <li><a href="./index.html">Home</a></li>
-                <li class="active"><a href="#">Cars</a></li>
-                <li><a href="#">Motorcycle</a></li>
+                <li>
+                    <a href="./catalogue.html">Cars</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Near you</a></li>
+                        <li><a href="#">Recomended</a></li>
+                        <li><a href="#">High rating</a></li>
+                    </ul>
+                </li>
+                <li><a href="./catalogue.html">Motorcycle</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
@@ -317,7 +325,7 @@
                         </div>
                     </a>
                 </div>
-                <a href="#" class="post-button">
+                <a href="./catalogue.html" class="post-button">
                     <div>View More</div>
                 </a>
             </section>
