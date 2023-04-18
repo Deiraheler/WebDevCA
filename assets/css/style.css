@@ -756,6 +756,10 @@ footer .container{
     background-color: white;
   }
 
+  .copyright{
+    color: #278bbc;
+  }
+
 
 @media screen and (max-width: 1240px){
     #menu-block{
